@@ -1,0 +1,24 @@
+{
+  "name": "source-map-test",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "通过source-map映射错误栈的具体位置",
+  "main": "index.js",
+  "scripts": {
+    "rollup": "rollup --config ./rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jobinben/source-map-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jobinben/source-map-test/issues"
+  },
+  "homepage": "https://github.com/jobinben/source-map-test#readme",
+  "devDependencies": {
+    "source-map": "^0.7.4"
+  }
+}
