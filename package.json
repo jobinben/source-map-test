@@ -1,7 +1,7 @@
 {
   "name": "source-map-test",
   "version": "1.0.0",
-  "type": "commonjs",
+  "type": "module",
   "description": "通过source-map映射错误栈的具体位置",
   "main": "index.js",
   "scripts": {

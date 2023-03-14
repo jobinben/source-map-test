@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script src="./dist/bundle.js"></script>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="container"></div>
+        <script src="./dist/bundle.js"></script>
+
+        <script>
+            window.onerror = function (e, source, line, column, error) {
+                // console.log(e, source, line, column, error);
+                const dom = document.getElementById("container");
+                dom.append(`line: ${line}, column: ${column}`);
+            }
+        </script>
+    </body>
 </html>
